@@ -1,0 +1,8 @@
+- if @publication
+  %article
+    %header
+      %h1= @publication.title
+    = @publication.to_html
+
+- else
+  %p No publication publied yet.

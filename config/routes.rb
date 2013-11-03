@@ -1,8 +1,12 @@
 MusicBand::Application.routes.draw do
   
+  get "pages/welcome"
+
   namespace :admin do
     resources :publications
   end
+
+  root 'pages#welcome'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
