@@ -1,8 +1,5 @@
 - if @publication
-  %article
-    %header
-      %h1= @publication.title
-    = @publication.to_html
+  = render "publications/show"
 
 - else
   %p No publication publied yet.

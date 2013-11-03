@@ -4,6 +4,7 @@ MusicBand::Application.routes.draw do
 
   namespace :admin do
     resources :publications
+    root 'publications#index'
   end
 
   root 'pages#welcome'

@@ -1,11 +1,4 @@
-%p#notice= notice
-
-%p
-  %b Title:
-  = @publication.title
-%p
-  %b Content:
-  = @publication.to_html
+= render "publications/show"
 
 = link_to 'Edit', edit_admin_publication_path(@publication)
 \|

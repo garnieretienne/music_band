@@ -1,21 +1,15 @@
-%h1 Listing publications
+%h1 Publications
 
-%table
-  %tr
-    %th Title
-    %th Content
-    %th
-    %th
-    %th
+%menu
+  = link_to 'New Publication', new_admin_publication_path
 
-  - @publications.each do |publication|
-    %tr
-      %td= publication.title
-      %td= publication.to_html
-      %td= link_to 'Show', admin_publication_path(publication)
-      %td= link_to 'Edit', edit_admin_publication_path(publication)
-      %td= link_to 'Destroy', admin_publication_path(publication), :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Publication', new_admin_publication_path
+- if @publications.any?
+  %ul
+    - @publications.each do |publication|
+      %li
+        %h2= link_to publication.title, admin_publication_path(publication)
+        %menu
+          = link_to "edit", edit_admin_publication_path(publication)
+          = link_to "destroy", admin_publication_path(publication), method: :delete, confirm: "Are you sure ?"
+- else
+  %p No publications yet.
