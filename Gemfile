@@ -49,3 +49,6 @@ gem "haml-rails"
 
 # Use Procfile to start the app
 gem 'foreman', group: [:development]
+
+# Markdown parser
+gem 'redcarpet'

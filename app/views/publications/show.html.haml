@@ -5,7 +5,7 @@
   = @publication.title
 %p
   %b Content:
-  = @publication.content
+  = @publication.to_html
 
 = link_to 'Edit', edit_publication_path(@publication)
 \|
