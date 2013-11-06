@@ -1,6 +1,8 @@
 body {
-  width: 1024px;
+  width: 960px;
   margin: auto;
+  background-color: #312b28;
+  background-image: url(image_path('gray_pattern.png'));
 }
 
 ul {
@@ -32,5 +34,14 @@ form {
 
   .field, .actions {
     margin: 1em 0;
+  }
+}
+
+header#page_header {
+  margin-bottom: 2em;
+  text-align: center;
+
+  .logo {
+    height: 8em;
   }
 }

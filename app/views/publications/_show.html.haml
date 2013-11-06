@@ -1,4 +1,5 @@
 %article
   %header
     %h1= @publication.title
+    .publication-date= @publication.created_at.to_formatted_s(:long_ordinal)
   = @publication.to_html
