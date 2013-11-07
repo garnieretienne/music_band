@@ -6,6 +6,6 @@
     = csrf_meta_tags
   %body
     %header#page_header
-      = image_tag "logo.png", class: "logo"
+      = link_to image_tag("logo.png", class: "logo"), root_path
     = yield
     = javascript_include_tag "application", "data-turbolinks-track" => true

@@ -1,6 +1,7 @@
 MusicBand::Application.routes.draw do
-  
   get "pages/welcome"
+
+  resources :publications
 
   namespace :admin do
     resources :publications

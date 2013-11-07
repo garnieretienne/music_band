@@ -18,7 +18,7 @@ class Publication < ActiveRecord::Base
   # Markdown extention: replace every youtube links with embedded youtube video
   def markdown_extention_youtube_links(html)
     html = html.gsub /<a\shref="http:\/\/www\.youtube\.com\/watch\?v=(.*).*".*>.*<\/a>/o, 
-      "<p><iframe class=\"youtube-player\" width=\"640\" height=\"390\" src=\"http://www.youtube.com/embed/\\1\"></iframe></p>"
+      "<p><iframe class=\"youtube-player\" src=\"http://www.youtube.com/embed/\\1\"></iframe></p>"
     return html
   end
 end

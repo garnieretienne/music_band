@@ -1,0 +1,6 @@
+%article
+  %header
+    .publication-thumbnail= image_tag publication.thumbnail if publication.thumbnail?
+    %h1= link_to publication.title, publication
+    .publication-date= publication.created_at.to_formatted_s(:long_ordinal)
+  = publication.to_html
