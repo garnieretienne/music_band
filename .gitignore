@@ -17,3 +17,6 @@
 
 # Ignore local bundle gems
 /vendor/bundle
+
+# Ignore development env file
+.env
