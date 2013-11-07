@@ -8,6 +8,17 @@ class Publication < ActiveRecord::Base
   # Convert the publication markdown content into HTML
   def to_html
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true)
-    markdown.render(content).html_safe
+    html = markdown.render(content)
+    html = markdown_extention_youtube_links(html)
+    return html.html_safe
+  end
+
+  private
+
+  # Markdown extention: replace every youtube links with embedded youtube video
+  def markdown_extention_youtube_links(html)
+    html = html.gsub /<a\shref="http:\/\/www\.youtube\.com\/watch\?v=(.*).*".*>.*<\/a>/o, 
+      "<iframe class=\"youtube-player\" width=\"640\" height=\"390\" src=\"http://www.youtube.com/embed/\\1\"></iframe>"
+    return html
   end
 end
