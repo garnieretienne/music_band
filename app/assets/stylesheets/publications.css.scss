@@ -5,9 +5,29 @@
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
 @import url(http://fonts.googleapis.com/css?family=Sintony);
 
-article {
+article, .edit_publication, .new_publication {
   background-color: #e6e6e6;
   padding: 1.6em;
+
+  .publication-thumbnail {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.edit_publication, .new_publication {
+
+  label {
+    display: none;
+  }
+
+  #publication_title {
+    font-size: 1.6em;
+  }
+}
+
+article {
   font-family: 'Sintony', sans-serif;
   color: #1c1c1c;
 
@@ -17,10 +37,6 @@ article {
 
   header {
     margin-bottom: 2em;
-
-    .thumbnail {
-      width: 100%;
-    }
 
     h1 {
       font-family: 'Oleo Script', cursive;
