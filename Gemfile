@@ -52,3 +52,7 @@ gem 'foreman', group: [:development]
 
 # Markdown parser
 gem 'redcarpet'
+
+# Store images on Dropbox using Paperclip + Dropbox addon
+gem "paperclip"
+gem "paperclip-dropbox"
