@@ -5,7 +5,14 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %header#page_header
-      = link_to image_tag("logo.png", class: "logo"), root_path
+    %header#page-header
+      .container
+        = link_to image_tag("logo.png", class: "logo"), root_path
     = yield
+    %footer#page-footer
+      = image_tag "syldave_logo.jpg"
+      = image_tag "hehopok_logo.jpg"
+      = image_tag "webvds_logo.png"
+      = image_tag "autre_logo.jpg"
+      = image_tag "igloo_logo.jpg"
     = javascript_include_tag "application", "data-turbolinks-track" => true

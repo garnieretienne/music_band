@@ -1,3 +1,35 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#banner, #last-publication {
+  padding: 6em 0;
+}
+
+#banner {
+  background-image: url(image_path('gray_pattern.jpg'));
+
+  img {
+    padding-left: 12em;
+    height: 28em;
+  }
+}
+
+#last-publication {
+  background-image: url(image_path('red_pattern.jpg'));
+
+  #last-publication-text {
+    height: 1.8em;
+    padding-bottom: 3em;
+  }
+
+  #view-all-publication {
+    margin-top: -2em;
+    text-align: right;
+
+    a:first-child {
+      padding-right: 0;
+      padding-left: inherit;
+    }
+  }
+}

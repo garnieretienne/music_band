@@ -1,13 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Sintony);
 
 body {
-  width: 680px;
   margin: auto;
   background-color: #312b28;
-  background-image: url(image_path('gray_pattern.jpg'));
   font-family: 'Sintony', sans-serif;
   color: #e6e6e6;
   font-size: 14px;
+}
+
+.container {
+  width: 680px;
+  margin: auto;
 }
 
 ul {
@@ -18,10 +21,15 @@ ul {
 
 menu {
   margin: 0;
+  padding: 0;
 
   a {
     display: inline-block;
     padding: 0 0.5em;
+  }
+
+  a:first-child {
+    padding-left: 0;
   }
 }
 
@@ -57,11 +65,22 @@ iframe {
   border: 0;
 }
 
-header#page_header {
-  margin: 1em 0;
-  text-align: center;
+header#page-header {
+  background-image: url(image_path('gray_pattern.jpg'));
+  padding: 2em;
 
   .logo {
-    height: 8em;
+    height: 6em;
   }
 }
+
+footer#page-footer {
+  background-image: url(image_path('footer_pattern.jpg'));
+  padding: 2em;
+  text-align: center;
+
+  img {
+    height: 6em;
+  }
+}
+

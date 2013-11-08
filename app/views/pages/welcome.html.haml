@@ -1,7 +1,12 @@
-- if @publication
-  = render "publications/publication", publication: @publication
-  %menu
-    = link_to "View all publications", publications_path
+#banner
+  = image_tag "album.png"
+#last-publication
+  .container
+    = image_tag "last_publication_text.png", id: "last-publication-text"
+    - if @publication
+      = render "publications/publication", publication: @publication
+      %menu#view-all-publication
+        = link_to ">> View all publications", publications_path
 
-- else
-  %p No publication publied yet.
+    - else
+      %p No publication publied yet.
