@@ -1,8 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Sintony);
+
 body {
   width: 680px;
   margin: auto;
   background-color: #312b28;
   background-image: url(image_path('gray_pattern.png'));
+  font-family: 'Sintony', sans-serif;
+  color: #e6e6e6;
 }
 
 ul {
@@ -13,11 +17,25 @@ ul {
 
 menu {
   margin: 0;
-  padding: 0;
+  padding: 1em 0;
+  text-align: right;
+
+  a {
+    font-size: 0.9em;
+    display: inline-block;
+
+    &:after {
+      content: " | "
+    }
+
+    &:last-child:after {
+      content: " "
+    }
+  }
 }
 
 a {
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 

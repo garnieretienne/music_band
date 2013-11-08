@@ -1,9 +1,5 @@
 class Admin::PublicationsController < ApplicationController
-  before_action :set_publication, only: [:show, :edit, :update, :destroy]
-
-  def index
-    @publications = Publication.all
-  end
+  before_action :set_publication, only: [:edit, :update, :destroy]
 
   def new
     @publication = Publication.new
