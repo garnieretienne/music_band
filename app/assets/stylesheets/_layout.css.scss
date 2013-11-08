@@ -7,6 +7,7 @@ body {
   background-image: url(image_path('gray_pattern.jpg'));
   font-family: 'Sintony', sans-serif;
   color: #e6e6e6;
+  font-size: 14px;
 }
 
 ul {
@@ -17,20 +18,10 @@ ul {
 
 menu {
   margin: 0;
-  padding: 1em 0;
-  text-align: right;
 
   a {
-    font-size: 0.9em;
     display: inline-block;
-
-    &:after {
-      content: " | "
-    }
-
-    &:last-child:after {
-      content: " "
-    }
+    padding: 0 0.5em;
   }
 }
 
