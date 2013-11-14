@@ -5,8 +5,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
 
 article, .edit_publication, .new_publication {
-  background-color: #e6e6e6;
-  padding: 2em;
 
   .publication-thumbnail {
     img {
@@ -27,11 +25,12 @@ article, .edit_publication, .new_publication {
 }
 
 article {
+  background-color: #e6e6e6;
+  padding: 2em;
   color: #1c1c1c;
-  margin: auto;
   margin: 4em 0;
   text-align: justify;
-
+  
   -webkit-box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.75);

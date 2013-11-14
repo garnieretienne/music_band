@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Sintony);
 
+$white: #e6e6e6;
+$dark-gray: #312b28;
+$black: #1c1c1c;
+
 body {
   margin: auto;
   background-color: #312b28;
@@ -11,6 +15,13 @@ body {
 .container {
   width: 680px;
   margin: auto;
+}
+
+.admin {
+  background-color: $white;
+  color: $black;
+  padding: 2em;
+  margin-bottom: 2em;
 }
 
 ul {
